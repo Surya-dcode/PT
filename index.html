@@ -266,78 +266,6 @@
             50% { opacity: 0.8; transform: scale(1.1); }
         }
 
-        /* Photo Gallery */
-        .photo-gallery {
-            margin: 40px 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            background: rgba(255, 192, 203, 0.2);
-            border-radius: 20px;
-        }
-
-        .photo-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 15px;
-            aspect-ratio: 1;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            animation: photoFadeIn 1s ease-out backwards;
-        }
-
-        .photo-item:nth-child(1) { animation-delay: 0.2s; }
-        .photo-item:nth-child(2) { animation-delay: 0.4s; }
-        .photo-item:nth-child(3) { animation-delay: 0.6s; }
-        .photo-item:nth-child(4) { animation-delay: 0.8s; }
-        .photo-item:nth-child(5) { animation-delay: 1s; }
-        .photo-item:nth-child(6) { animation-delay: 1.2s; }
-
-        @keyframes photoFadeIn {
-            from {
-                opacity: 0;
-                transform: scale(0.8) rotate(-5deg);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1) rotate(0deg);
-            }
-        }
-
-        .photo-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
-            z-index: 10;
-        }
-
-        .photo-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        .photo-placeholder {
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, #ff9a56, #ff6b95);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 48px;
-            opacity: 0.3;
-        }
-
-        .gallery-title {
-            text-align: center;
-            font-size: 28px;
-            color: #ff6b6b;
-            margin-bottom: 20px;
-            font-family: 'Pacifico', cursive;
-        }
-
         .music-note {
             position: fixed;
             font-size: 30px;
@@ -380,7 +308,7 @@
 
     <div class="container">
         <div class="header">
-            <h1>Happy New Year Maa</h1>
+            <h1> Happy New Year Maa</h1>
             <div class="year-transition">2024 → 2025 → Forever</div>
         </div>
 
@@ -414,34 +342,8 @@
             </p>
         </div>
 
-        <!-- Photo Gallery Section -->
-        <!-- Photo Gallery Section -->
-        <div class="photo-gallery">
-            <div class="gallery-title">Our Memories Together</div>
-            <div style="grid-column: 1 / -1; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
-                <div class="photo-item">
-                    <img src="1.jpg" alt="Our Memory 1">
-                </div>
-                <div class="photo-item">
-                    <img src="2.jpg" alt="Our Memory 2">
-                </div>
-                <div class="photo-item">
-                    <img src="3.jpg" alt="Our Memory 3">
-                </div>
-                <div class="photo-item">
-                    <img src="4.jpg" alt="Our Memory 4">
-                </div>
-                <div class="photo-item">
-                    <img src="5.jpg" alt="Our Memory 5">
-                </div>
-                <div class="photo-item">
-                    <img src="6.jpg" alt="Our Memory 6">
-                </div>
-            </div>
-        </div>
-
         <div class="love-meter">
-            <div class="countdown-title">Love Meter</div>
+            <div class="countdown-title">Love Level</div>
             <div class="love-bar">
                 <div class="love-fill">∞ INFINITE ∞</div>
             </div>
