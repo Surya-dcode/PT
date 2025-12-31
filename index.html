@@ -355,7 +355,7 @@
         </div>
 
         <div class="signature">
-            Forever Yours,<br>Surya
+            Forever Ys,<br>Surya
         </div>
     </div>
 
@@ -396,7 +396,7 @@
 
         // Countdown calculator (adjust the target date as needed)
         function updateCountdown() {
-            // Set your reunion date here (example: 3 weeks from now)
+            // Set y reunion date here (example: 3 weeks from now)
             const targetDate = new Date();
             targetDate.setDate(targetDate.getDate() + 21); // 3 weeks
             
@@ -405,10 +405,10 @@
                 const difference = targetDate - now;
                 
                 const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const hs = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 
                 document.getElementById('countdown-display').textContent = 
-                    `${days} days, ${hours} hours`;
+                    `${days} days, ${hs} hs`;
             }
             
             calculate();
